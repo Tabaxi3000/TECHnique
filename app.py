@@ -42,7 +42,7 @@ def train_step(image):
     opt.apply_gradients([(grad, image)])
     image.assign(clip_0_1(image))
 
-@st.cache(allow_output_mutation=True, suppress_st_warning = True)
+@st.cache(allow_output_mutation=True, suppress_st_warning = True, ttl = 90)
 def run_style_transfer(image, epochs, steps_per_epoch):
   generated_image.image(tensor_to_image(image), caption = 'Starting...', use_column_width = True)
   step = 0
