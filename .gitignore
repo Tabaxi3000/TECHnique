@@ -1,0 +1,8 @@
+*/.DS_store
+.idea
+*/.ipynb_checkpoints/*
+*/.env
+*/__pycache__/
+*.py[cod]
+*/.nova
+*/.env
